@@ -17,7 +17,7 @@ namespace PongGame
         ///<returns>Returns true if overlapping</returns>
         public static bool Overlaps(Sprite s1, Sprite s2)
         {
-            if ((s1.Position.Y + (Ball.BallSize / 2.0f) >= 900.0f - s2.Size.Height && s1.Position.X >= s2.Position.X && 
+            if ((s1.Position.Y + (Ball.BallSize / 2.0f) >= 900.0f - 30.0f && s1.Position.X >= s2.Position.X && 
                 s1.Position.X + Ball.BallSize <= s2.Position.X + s2.Size.Width) ||
                 (s1.Position.Y  <= s2.Size.Height && s1.Position.X >= s2.Position.X &&
                 s1.Position.X + Ball.BallSize <= s2.Position.X + s2.Size.Width))
