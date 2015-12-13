@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="IIntegerList.cs" />
     <Compile Include="IntegerList.cs" />
+    <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

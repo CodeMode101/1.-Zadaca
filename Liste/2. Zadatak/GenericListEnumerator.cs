@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _2.Zadatak
 {
-    class GenericListEnumerator<T> : IEnumerator<T>
+    public class GenericListEnumerator<T> : IEnumerator<T>
     {
         private IGenericList<T> _collection;
         private int index = 0;

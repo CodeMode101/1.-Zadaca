@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2.Zadatak
 {
-    class GenericList<X> : IGenericList<X>
+    public class GenericList<X> : IGenericList<X>
     {
         private X[] _internalStorage;
 
@@ -25,7 +25,7 @@ namespace _2.Zadatak
         {
             for (int i = 0; i < _internalStorage.Length; ++i)
             {
-                if (_internalStorage[i].Equals(default(X)))
+                if (_internalStorage[i] == null)
                 {
                     _internalStorage[i] = item;
                     return;
